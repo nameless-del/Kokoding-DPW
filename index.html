@@ -72,7 +72,6 @@
 
             <section id="view-stock" class="view-section">
                 <h2 class="section-title">Pencatatan Stok Kakao</h2>
-                
                 <div class="two-column-layout">
                     <div class="panel">
                         <form id="form-stock">
@@ -92,10 +91,20 @@
                     </div>
 
                     <div class="panel">
-                        <h4 style="margin-top: 0;">Riwayat Stok</h4>
+                        <div class="table-header">
+                            <h4 style="margin: 0;">Riwayat Stok</h4>
+                            <button id="btn-del-stock" class="btn-hapus">🗑️ Hapus Terpilih</button>
+                        </div>
                         <div class="table-responsive">
                             <table id="stock-table">
-                                <thead><tr><th>Tanggal</th><th>Jenis</th><th>Jumlah</th></tr></thead>
+                                <thead>
+                                    <tr>
+                                        <th style="width: 50px;">Pilih</th>
+                                        <th>Tanggal</th>
+                                        <th>Jenis</th>
+                                        <th>Jumlah</th>
+                                    </tr>
+                                </thead>
                                 <tbody></tbody>
                             </table>
                         </div>
@@ -105,7 +114,6 @@
 
             <section id="view-finance" class="view-section">
                 <h2 class="section-title">Pencatatan Keuangan</h2>
-                
                 <div class="two-column-layout">
                     <div class="panel">
                         <form id="form-finance">
@@ -129,17 +137,26 @@
                     </div>
 
                     <div class="panel">
-                        <h4 style="margin-top: 0;">Riwayat Keuangan</h4>
+                        <div class="table-header">
+                            <h4 style="margin: 0;">Riwayat Keuangan</h4>
+                            <button id="btn-del-finance" class="btn-hapus">🗑️ Hapus Terpilih</button>
+                        </div>
                         <div class="table-responsive">
                             <table id="finance-table">
-                                <thead><tr><th>Tanggal</th><th>Keterangan</th><th>Nominal</th></tr></thead>
+                                <thead>
+                                    <tr>
+                                        <th style="width: 50px;">Pilih</th>
+                                        <th>Tanggal</th>
+                                        <th>Keterangan</th>
+                                        <th>Nominal</th>
+                                    </tr>
+                                </thead>
                                 <tbody></tbody>
                             </table>
                         </div>
                     </div>
                 </div>
             </section>
-
         </main>
     </div>
     <script src="script.js"></script>
